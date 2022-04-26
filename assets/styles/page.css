@@ -1,0 +1,60 @@
+@import url(./tokens.css);
+
+.header {
+  padding: var(--spacing-large) var(--spacing-extra-large);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--spacing-small);
+}
+
+.logo {
+  font-size: var(--font-size-title-small);
+  font-weight: 700;
+  font-style: italic;
+  line-height: var(--line-height-title-normal);
+}
+
+.dot::after {
+  content: ".";
+  color: var(--color-text);
+}
+
+.header .login {
+  display: none;
+}
+
+.header .links-wrapper {
+  display: flex;
+  column-gap: var(--spacing-medium);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-extra-large);
+}
+
+.hero .banner {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .banner > img {
+  height: 200px;
+}
+
+.hero .holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .holder .title {
+  font-size: var(--font-size-title-small);
+  line-height: var(--line-height-title-small);
+}
+
+.hero .holder .request-button {
+  margin-top: var(--spacing-medium);
+}

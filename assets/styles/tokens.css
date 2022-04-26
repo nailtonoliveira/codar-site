@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #d6000d;
+  --color-text: #212529;
+
+  --spacing-base: 8px;
+  --spacing-small: 16px;
+  --spacing-medium: 24px;
+  --spacing-large: 32px;
+  --spacing-extra-large: 40px;
+
+  --font-size-small: 16px;
+  --font-size-normal: 20px;
+
+  --font-size-title-small: 36px;
+  --font-size-title-normal: 40px;
+
+  --line-height-normal: 24px;
+  --line-height-title-small: 40px;
+  --line-height-title-normal: 48px;
+}

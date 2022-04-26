@@ -33,6 +33,7 @@
   display: flex;
   flex-direction: column;
   row-gap: var(--spacing-extra-large);
+  padding: 0 var(--spacing-medium);
 }
 
 .hero .banner {
@@ -57,4 +58,58 @@
 
 .hero .holder .request-button {
   margin-top: var(--spacing-medium);
+}
+
+.section-services {
+  margin-top: 156px;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-medium);
+}
+
+.section-services .list-banner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  row-gap: var(--spacing-medium);
+}
+
+.section-services .list-banner > img {
+  height: 180px;
+}
+
+.section-services .list-banner .list {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-small);
+}
+
+.section-services .list-banner .list > div {
+  display: flex;
+  align-items: center;
+  column-gap: var(--spacing-small);
+}
+
+.section-services .calling {
+  display: grid;
+  grid-template-columns: [first] auto [mid-left] 220px [mid-right] auto [end];
+  justify-items: center;
+  row-gap: var(--spacing-base);
+}
+
+.section-services .calling > p {
+  grid-column-start: 1;
+  grid-column-end: end;
+}
+
+.section-services .calling > input {
+  width: 100%;
+  grid-column-start: mid-left;
+  grid-column-end: mid-right;
+}
+
+.section-services .calling > button {
+  width: 100%;
+  grid-column-start: mid-left;
+  grid-column-end: mid-right;
 }

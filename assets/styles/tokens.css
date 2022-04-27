@@ -1,20 +1,26 @@
 :root {
   --color-primary: #d6000d;
-  --color-text: #212529;
+  --color-text: #212121;
+  --color-grey-300: #e0e0e0;
+  --color-grey-900: #212121;
 
   --spacing-base: 8px;
-  --spacing-small: 16px;
-  --spacing-medium: 24px;
-  --spacing-large: 32px;
-  --spacing-extra-large: 40px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 40px;
 
-  --font-size-small: 16px;
-  --font-size-normal: 20px;
+  --font-size-xs: 12px;
+  --font-size-sm: 16px;
+  --font-size-md: 20px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 36px;
+  --font-size-xxxl: 40px;
 
-  --font-size-title-small: 36px;
-  --font-size-title-normal: 40px;
-
-  --line-height-normal: 24px;
-  --line-height-title-small: 40px;
-  --line-height-title-normal: 48px;
+  --line-height-sm: 18px;
+  --line-height-md: 24px;
+  --line-height-lg: 32px;
+  --line-height-xl: 40px;
+  --line-height-xxl: 48px;
 }

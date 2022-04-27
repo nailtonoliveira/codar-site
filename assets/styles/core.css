@@ -7,8 +7,8 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   color: var(--color-text);
-  font-size: var(--font-size-small);
-  line-height: var(--line-height-normal);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-md);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -19,7 +19,7 @@ button {
   border: none;
   border-radius: 10px;
 
-  padding: 0 var(--spacing-extra-large);
+  padding: 0 var(--spacing-xl);
   height: 40px;
   font-weight: 700;
 }
@@ -37,11 +37,11 @@ a {
 }
 
 input {
-  background-color: #e0e0e0;
+  background-color: var(--color-grey-300);
   border: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 var(--spacing-medium);
+  padding: 0 var(--spacing-md);
   height: 40px;
 }
 
@@ -59,7 +59,7 @@ input {
 
 @media screen and (min-width: 600px) {
   * {
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-md);
   }
 
   button {

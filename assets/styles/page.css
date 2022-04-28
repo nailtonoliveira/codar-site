@@ -26,6 +26,7 @@
 
 .header .links-wrapper {
   display: flex;
+  align-items: center;
   column-gap: var(--spacing-md);
 }
 
@@ -156,7 +157,7 @@
 }
 
 .section-cases .case-card .card-footer .person {
-  font-size: 18px;
+  font-size: var(--font-size-md);
   font-weight: 500;
 }
 
@@ -201,7 +202,6 @@
 
 .footer .about {
   grid-area: about;
-  display: flex;
 }
 
 .footer .contact {
@@ -220,4 +220,122 @@
 .footer .social-medias > img {
   width: 32px;
   height: 32px;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: var(--font-size-xxxl);
+  }
+
+  .header .login {
+    display: block;
+    padding: 0 var(--spacing-xl);
+  }
+
+  .hero {
+    height: calc(100vh - 256px);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .hero .banner > img {
+    height: 320px;
+  }
+
+  .hero .holder {
+    align-items: flex-start;
+  }
+
+  .hero .holder .title {
+    font-size: var(--font-size-xxxl);
+    line-height: var(--line-height-xxl);
+  }
+
+  .section-services {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-md);
+    align-items: flex-start;
+  }
+
+  .section-services .list-banner {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-services .list-banner > img {
+    height: 380px;
+  }
+
+  .section-services .calling {
+    grid-template-columns: 240px 240px;
+    grid-template-areas:
+      "highlight highlight"
+      "phone submit";
+    justify-items: start;
+    gap: var(--spacing-sm);
+  }
+
+  .section-cases {
+    margin-top: var(--spacing-xxxl);
+    flex-direction: row;
+    column-gap: var(--spacing-lg);
+  }
+
+  .section-cases .case-card {
+    flex: 1;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    grid-template-columns: 64px auto;
+    column-gap: var(--spacing-md);
+    row-gap: var(--spacing-sm);
+  }
+
+  .section-cases .case-card .avatar {
+    width: 64px;
+    height: 64px;
+  }
+
+  .section-cases .case-card .message {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-md);
+  }
+
+  .section-cases .case-card .card-footer .person {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+  }
+
+  .section-cases .case-card .card-footer .company {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+  }
+
+  .footer {
+    padding: var(--spacing-xxxl) var(--spacing-lg);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo about contact social";
+    justify-items: center;
+  }
+
+  .footer > div {
+    row-gap: var(--spacing-sm);
+  }
+
+  .footer h4 {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+  }
+
+  .footer .logo-message {
+    align-items: flex-start;
+  }
 }

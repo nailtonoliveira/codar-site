@@ -57,6 +57,11 @@ input {
   font-weight: 700;
 }
 
+.max-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 600px) {
   * {
     font-size: var(--font-size-md);

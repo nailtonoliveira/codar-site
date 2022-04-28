@@ -9,6 +9,7 @@
   --spacing-md: 24px;
   --spacing-lg: 32px;
   --spacing-xl: 40px;
+  --spacing-xxxl: 64px;
 
   --font-size-xs: 12px;
   --font-size-sm: 16px;
@@ -16,11 +17,11 @@
   --font-size-lg: 24px;
   --font-size-xl: 32px;
   --font-size-xxl: 36px;
-  --font-size-xxxl: 40px;
+  --font-size-xxxl: 56px;
 
   --line-height-sm: 18px;
   --line-height-md: 24px;
   --line-height-lg: 32px;
   --line-height-xl: 40px;
-  --line-height-xxl: 48px;
+  --line-height-xxl: 64px;
 }
